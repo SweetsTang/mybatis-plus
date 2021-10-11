@@ -16,7 +16,7 @@ public class User {
     @TableField(value = "user_name")
     private String userName;
 
-    @TableField(value = "user_Age", fill = FieldFill.INSERT)
+    @TableField(value = "user_age", fill = FieldFill.INSERT)
     private Integer userAge;
 
     @TableField(value = "user_email")

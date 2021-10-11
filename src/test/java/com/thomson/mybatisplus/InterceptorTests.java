@@ -28,4 +28,12 @@ public class InterceptorTests {
 
     }
 
+    @Test
+    void testSelectPageByAge(){
+        Page<User> pageParam = new Page<>(1, 3);
+        userMapper.selectPageByAge(pageParam,23);
+        List<User> users = pageParam.getRecords();
+        users.forEach(System.out::println);
+    }
+
 }
