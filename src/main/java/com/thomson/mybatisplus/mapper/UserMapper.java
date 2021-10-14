@@ -21,4 +21,5 @@ public interface UserMapper extends BaseMapper<User> {
      */
     IPage<User> selectPageByAge(Page<?> page,@Param(value = "age") Integer age);
 
+
 }
